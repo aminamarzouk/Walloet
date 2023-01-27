@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walloet | Login</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- bootstrap library -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- animate library -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- nav start -->
+
+    <nav>
+
+        <div class="container">
+
+            <i class="fas fa-bars"></i>
+
+            <h4><span>Wall</span>oet</h4>
+
+            <div class="btns">
+                <button onclick="window.location.replace('login.html')">Log In</button>
+                <button onclick="window.location.replace('signup.html')">Sign Up</button>
+            </div>
+
+        </div>
+
+        <ul id="listed">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="about.html">
+                <li>About Us</li>
+            </a>
+        </ul>
+
+    </nav>
+
+    <!-- nav end -->
+
+    <!-- container start -->
+
+    <div class="login signup">
+
+        <div class="container">
+            <div class="left">
+                <h1>Welcome Back to <span>Wall</span>oet!</h1>
+                <h4>Login to access the admin page!</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic dolores, eaque repudiandae aut
+                    voluptates voluptas praesentium reprehenderit mollitia beatae excepturi sunt quibusdam, illo dolor
+                    voluptatem, in maxime veritatis dolorum fugiat!</p>
+            </div>
+            <div class="right">
+                <form id="logInForm">
+                    <legend>Login</legend>
+                    <input type="text" id="usernameLi" class="username" placeholder="username" required>
+                    <input type="password" id="passwordLi" class="password" placeholder="password" required> 
+                    <a href="">forget password?</a>
+                    <input type="submit" value="Login" class="submit" id="submitLogIn" onclick="checkLogin()">
+                    <span class="error" id="error">Please enter valid username and password</span>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- container end -->
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
